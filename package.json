@@ -1,0 +1,29 @@
+{
+  "name": "@j.u.p.iter/react-test-utils",
+  "version": "1.0.0",
+  "description": "Handy react utils to make testing more effective",
+  "main": "dist/lib/react-test-utils.cjs.js",
+  "repository": "https://github.com/j-u-p-iter/react-test-utils",
+  "author": "Leontyev Kirill (j.u.p.iter) <pn79122821224@gmail.com> (http://j-u-p-iter.pro/)",
+  "license": "MIT",
+  "scripts": {
+    "commit": "jupiter-scripts precommit --allowJs",
+    "build": "jupiter-scripts build --bundle",
+    "start": "yarn run build --watch",
+    "lint": "jupiter-scripts lint --format codeFrame",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jupiter-scripts test"
+  },
+  "devDependencies": {
+    "@j.u.p.iter/jupiter-scripts": "1.3.1",
+    "@types/jest-in-case": "^1.0.0",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router-dom": "^4.3.1",
+    "jest-in-case": "^1.0.2",
+    "react": "16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "wait-for-expect": "^1.1.0"
+  }
+}
