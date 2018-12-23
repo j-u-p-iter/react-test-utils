@@ -24,7 +24,9 @@ describe("renderWithReactRouter(ComponentToRender)", () => {
     },
     {
       "renders on new path properly": { pathToGo: "/some/path" },
-      "renders on new path properly one more time": { pathToGo: "/some/new/path" },
+      "renders on new path properly one more time": {
+        pathToGo: "/some/new/path"
+      }
     }
   );
 });
