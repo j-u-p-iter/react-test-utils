@@ -7,9 +7,7 @@ describe("renderWithReactRouter(ComponentToRender)", () => {
   let renderResults: ReturnType<RenderWithReactRouter>;
 
   beforeAll(() => {
-    const ComponentToRender = () => <div>Hello</div>;
-
-    renderResults = renderWithReactRouter(ComponentToRender);
+    renderResults = renderWithReactRouter(() => <div>Hello</div>);
   });
 
   cases(
