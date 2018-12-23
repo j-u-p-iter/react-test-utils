@@ -1,1 +1,4 @@
-export { renderWithReactRouter } from "./render-with-react-router";
+export {
+  renderWithReactRouter,
+  RenderWithReactRouter
+} from "./render-with-react-router";
