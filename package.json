@@ -1,6 +1,6 @@
 {
   "name": "@j.u.p.iter/react-test-utils",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Handy react utils to make testing more effective",
   "main": "dist/lib/react-test-utils.cjs.js",
   "repository": "https://github.com/j-u-p-iter/react-test-utils",
