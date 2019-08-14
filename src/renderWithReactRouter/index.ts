@@ -1,4 +1,4 @@
 export {
   renderWithReactRouter,
   RenderWithReactRouter
-} from "./render-with-react-router";
+} from "./renderWithReactRouter";

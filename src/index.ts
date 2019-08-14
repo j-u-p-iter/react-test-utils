@@ -1,6 +1,6 @@
 export {
   renderWithReactRouter,
   RenderWithReactRouter
-} from "./render-with-react-router";
+} from "./renderWithReactRouter";
 
 export { createWindowMock } from "./create-window-mock";
