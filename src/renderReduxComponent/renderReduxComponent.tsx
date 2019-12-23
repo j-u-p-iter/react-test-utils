@@ -1,7 +1,7 @@
 import { render, RenderResult } from "@testing-library/react";
 import React, { ReactNode } from "react";
+import { Provider } from "react-redux";
 import { applyMiddleware, createStore, Middleware, Reducer } from "redux";
-import { StoreContext } from "redux-react-hook";
 
 interface Options<InitialState> {
   ui: ReactNode;
@@ -26,7 +26,5 @@ export const renderReduxComponent: RenderReduxComponent = ({
     applyMiddleware(...middlewares)
   );
 
-  return render(
-    <StoreContext.Provider value={store}>{ui}</StoreContext.Provider>
-  );
+  return render(<Provider store={store}>{ui}</Provider>);
 };

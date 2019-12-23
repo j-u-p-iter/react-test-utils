@@ -1,7 +1,7 @@
 import { fireEvent } from "@testing-library/react";
 import React, { FC } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Middleware, Reducer } from "redux";
-import { useDispatch, useMappedState } from "redux-react-hook";
 import { renderReduxComponent, RenderReduxComponent } from ".";
 
 import createSagaMiddleware from "redux-saga";
@@ -31,7 +31,7 @@ describe("renderReduxComponent", () => {
     const ComponentToRender: FC = () => {
       const dispatch = useDispatch();
 
-      const { count: countState } = useMappedState<State>(({ count }) => ({
+      const { count: countState } = useSelector<any, any>(({ count }) => ({
         count
       }));
 
